@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PIZZA</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center pizza">
+        <h1>PIZZA</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form id="your-order">
+            <div class="form-group">
+              <label for="your-name">Enter a name for your order:  </label>
+              <input id="name"type="text">
+            </div>
+
+            <div class= "form-group">
+              <h4>Select your pizza size:</h4>
+              <p>small = $9 | large = $12</p>
+              <input type="checkbox" name="size" value="small"> Small: 12" pizza.<br>
+              <input type="checkbox" name="size" value="large"> Large: 16" pizza.<br>
+            </div>
+
+            <div class= "form-group">
+              <h4>Select your pizza toppings:</h4>
+              <p>each topping + $1 </p>
+              <input type="checkbox" name="topping" value="pepperoni"> Pepperoni <br>
+              <input type="checkbox" name="topping" value="pineapple"> Pineapple <br>
+              <input type="checkbox" name="topping" value="onion"> Onion <br>
+              <input type="checkbox" name="topping" value="olive"> Olive <br>
+              <input type="checkbox" name="topping" value="anchovy"> Anchovy <br>
+              <input type="checkbox" name="topping" value="banana-peppers"> Banana Peppers <br>
+              <input type="checkbox" name="topping" value="artichoke-hearts"> Artichoke Hearts <br>
+            </div>
+
+            <button type="submit">Submit Order</button>
+          </form>
+        </div>
+
+        <div class="col-md-6">
+          <div id="ticket">
+            <h2><span id="your-name">, </span>you ordered: </h2>
+            <h3 id="order">
+
+              <ul id="toppings">
+              </ul>
+            </h3>
+
+            <h3 id="price">
+
+            </h3>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
